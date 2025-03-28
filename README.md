@@ -10,9 +10,15 @@
     - [ ] only show the code button if the code sample is available
 - [ ] Add more code samples
 - [ ] Darkmode ?
+- [ ] Add Front Page.
+- [ ] Add Search Functionality
+- [ ] Add 404 Page.
+- [ ] Add Site Map XML.
+- [ ] Add Structed Data.
 - [ ] Add Accessibility Resources
 - [ ] Add SEO Resources
 - [ ] Add PWA Resources
+- [ ] Add Analytics
 
 ## Data Structures Pages
 - [ ] Add Data Structures Pages
