@@ -7,6 +7,7 @@
 ## Pending Tasks
 - [ ] Implement Navigation Buttons Logic
 - [ ] Implement Code Samples Logic
+    - [ ] only show the code button if the code sample is available
 - [ ] Add more code samples
 
 ## Data Structures Pages
