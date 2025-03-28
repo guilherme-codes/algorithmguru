@@ -1,3 +1,6 @@
+import CodeBlock from "@/app/ui/codeBlock";
+import { typescriptSample } from "./code-samples/tsx";
+
 export default function Stacks() {
   return (
     <>
@@ -96,6 +99,14 @@ export default function Stacks() {
           <img className="h-[53px] w-[53px]" src="/img/typescript.svg" alt="Code" />
         </button>
       </div>
+
+
+    <div className="py-5">
+      <CodeBlock code={typescriptSample} 
+        language="typescript" 
+      />
+    </div>
+
     </>
   )
 }
