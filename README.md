@@ -1,4 +1,4 @@
-TODOs
+TODO's
 
 [x] Add base layout
 [x] Move to NextJs
