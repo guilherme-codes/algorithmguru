@@ -1,15 +1,54 @@
+'use client'
+import { useState } from "react";
 import SidebarNav from "./nav";
 
 export default function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <aside id="sidebar" className="w-64 h-screen fixed top-0 left-0 bg-blue-custom text-white p-2 overflow-y-auto transition-transform transform">
-      <div className="flex flex-col justify-center items-center mb-6">
-        <a href="/">
-          <img src="/img/capivara.webp" alt="Capibara Logo" className="w-30 h-30 px-3 pt-5" />
-          <span className="logo-title">Algorithm Guru</span>
-        </a>
-      </div>
-      <SidebarNav />
-    </aside>
-  )
+    <>
+      {/* Navbar */}
+      <nav className="lg:hidden fixed top-0 left-0 w-full bg-blue-custom text-white p-2 px-4 flex justify-between items-center z-50">
+        <span className="text-lg font-bold">Algorithm Guru</span>
+        <button onClick={toggleSidebar} className="p-2 cursor-pointer">
+          <i className={`fas text-[1.5rem] fa-${isOpen ? "times" : "bars"}`}></i>
+        </button>
+      </nav>
+
+      {/* Backdrop */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-40 lg:hidden"
+          onClick={toggleSidebar}
+        ></div>
+      )}
+
+      {/* Sidebar */}
+      <aside
+        id="sidebar"
+        className={`
+          w-4/5 max-w-xs h-screen fixed top-0 left-0 
+          bg-blue-custom text-white p-2 pt-5  overflow-y-auto 
+          transition-transform transform z-50 
+          ${isOpen ? "translate-x-0" : "-translate-x-full"} 
+          lg:translate-x-0 lg:w-64
+          shadow-lg
+          opacity-95
+        `
+        }
+      >
+        <div className="flex flex-col justify-center items-center mb-6 hidden lg:flex">
+          <a href="/">
+            <img src="/img/capivara.webp" alt="Capibara Logo" className="w-30 h-30 px-3 pt-5" />
+            <span className="logo-title">Algorithm Guru</span>
+          </a>
+        </div>
+        <SidebarNav />
+      </aside>
+    </>
+  );
 }
