@@ -73,6 +73,19 @@
   - [ ] Add Bit Manipulation Algorithms Page
   - [ ] Add Mathematical Algorithms Page
 
+## Problems Pages
+- [ ] Difficulty Level
+    - [ ]  Beginner
+    - [ ] Intermediate
+    - [ ] Advanced
+- [ ] Algorithm Type
+    - [ ] Sorting (Bubble Sort, Merge Sort, Quick Sort)
+    - [ ] Searching (Binary Search, Linear Search)
+    - [ ] Data Structures (Lists, Stacks, Queues, Trees, Graphs)
+    - [ ] Dynamic Programming
+    - [ ] Graph Algorithms (Dijkstra, Floyd-Warshall, DFS, BFS)
+    - [ ] Mathematical Algorithms (GCD, Sieve of Eratosthenes)   
+
 ## Additional Pages
 - [ ] Add Resources Pages
   - [ ] Add Books Page
