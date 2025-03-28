@@ -10,13 +10,9 @@ export function MenuItemComponent ({ item, level = 0, pathname = '' }: {
 }){
   const [isOpen, setIsOpen] = useState(false);
 
-  // Determine if the item has a submenu
   const hasSubMenu = item.subMenu && item.subMenu.length > 0;
-
-  // Check if current menu item is an exact route match
   const isExactMatch = item.href === pathname;
 
-  // Check if the current route is in this menu branch
   const isRouteInBranch = (menuItem: MenuItem): boolean => {
     if (menuItem.href === pathname) return true;
     return menuItem.subMenu 
@@ -24,19 +20,17 @@ export function MenuItemComponent ({ item, level = 0, pathname = '' }: {
       : false;
   };
 
-  // Auto-expand if the current route is in this menu branch
   useEffect(() => {
     if (hasSubMenu && isRouteInBranch(item)) {
       setIsOpen(true);
     }
   }, [pathname, item]);
 
-  // Render function for menu item content
   const renderItemContent = () => (
     <div 
       className={`flex items-center space-x-2 cursor-pointer menu-item py-2 px-3 ${
         level === 0 ? 'text-sm font-bold' : 'text-sm'
-      } ${isExactMatch ? 'menu-item-hover-color font-semibold' : ''}`}
+      } ${isExactMatch ? 'menu-item-active font-semibold' : ''}`}
       onClick={() => hasSubMenu && setIsOpen(!isOpen)}
     >
       {item.icon && <i className={item.icon}></i>}
@@ -47,7 +41,6 @@ export function MenuItemComponent ({ item, level = 0, pathname = '' }: {
 
   return (
     <li>
-      {/* If href exists, wrap in Link, otherwise use div */}
       {item.href ? (
         <Link href={item.href}>
           {renderItemContent()}
@@ -56,7 +49,6 @@ export function MenuItemComponent ({ item, level = 0, pathname = '' }: {
         renderItemContent()
       )}
 
-      {/* Render submenu if exists and is open */}
       {hasSubMenu && isOpen && (
         <ul className={`
           ${level === 0 ? 'ml-6' : 'ml-4'} 
