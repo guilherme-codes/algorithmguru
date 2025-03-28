@@ -9,6 +9,10 @@
 - [ ] Implement Code Samples Logic
     - [ ] only show the code button if the code sample is available
 - [ ] Add more code samples
+- [ ] Darkmode ?
+- [ ] Add Accessibility Resources
+- [ ] Add SEO Resources
+- [ ] Add PWA Resources
 
 ## Data Structures Pages
 - [ ] Add Data Structures Pages
@@ -81,6 +85,3 @@
 ## Project Infrastructure
 - [ ] Define Deployment Strategy
 - [ ] Set Up CI / CD
-- [ ] Add Accessibility Resources
-- [ ] Add SEO Resources
-- [ ] Add PWA Resources
