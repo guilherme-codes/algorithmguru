@@ -73,16 +73,17 @@ body {
   padding: 10px 5px;
 }
 
-.code-button--active {
-  box-shadow: inset 0 -2px 0 #0aca2e;
-  border-color: #0aca2e;
-  background-color: #e9ffe6;
-}
 
 .code-button:hover {
   box-shadow: inset 0 -2px 0 rgb(0, 166, 232, 1);
   border-color: rgb(0, 166, 232, 1);
   cursor: pointer;
+}
+
+.code-button--active, .code-button--active:hover {
+  box-shadow: inset 0 -2px 0 #0aca2e;
+  border-color: #0aca2e;
+  background-color: #e9ffe6;
 }
 
 
