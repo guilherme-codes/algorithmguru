@@ -5,6 +5,7 @@ import Sidebar from "./ui/sidebar";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
+  weight: ["400"],
   variable: "--font-open-sans"
 });
 
@@ -27,10 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${righteous.variable} antialiased flex`}
+        className={`${openSans.className} antialiased flex`}
       >
-        {children}
-        <aside id="sidebar" className="w-64 h-screen fixed top-0 left-0 bg-blue-custom text-white p-4 overflow-y-auto transition-transform transform">
+        <aside id="sidebar" className="w-64 h-screen fixed top-0 left-0 bg-blue-custom text-white p-2 overflow-y-auto transition-transform transform">
           <div className="flex flex-col justify-center items-center mb-6">
             <a href="/">
               <img src="/img/capivara.webp" alt="Capibara Logo" className="w-30 h-30 px-3 pt-5" />
@@ -40,6 +40,7 @@ export default function RootLayout({
           <Sidebar />
         </aside>
         <main id="mainContent" className="px-6 py-10 ml-64 transition-all xl:max-w-[60%]">
+        {children}
         </main>
       </body>
     </html>
