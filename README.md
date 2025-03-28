@@ -4,8 +4,6 @@ TODO's
 [x] Move to NextJs
 [ ] Implement Navigation Buttons Logic
 [ ] Implement Code Samples Logic
-  - Only show the button if the code sample is not empty
-  - Render only the default code sample on the server and the others on the client
 [ ] Add more code samples
 [ ] Add Data Structures Pages
   [ ] Add Array Page
