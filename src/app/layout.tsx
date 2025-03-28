@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans, Righteous } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./ui/sidebar";
 
@@ -7,12 +7,6 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-open-sans"
-});
-
-const righteous = Righteous({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-righteous"
 });
 
 export const metadata: Metadata = {
@@ -31,7 +25,7 @@ export default function RootLayout({
         className={`${openSans.className} antialiased flex`}
       >
         <Sidebar />
-        <main id="mainContent" className="px-6 pb-10 pt-20 lg:py-10 lg:ml-64 transition-all xl:max-w-[60%]">
+        <main className="px-6 pb-10 pt-20 lg:py-10 lg:ml-64 transition-all xl:max-w-[60%]">
         {children}
         </main>
       </body>

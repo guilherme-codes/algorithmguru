@@ -1,6 +1,13 @@
 'use client'
 import { useState } from "react";
 import SidebarNav from "./nav";
+import { Righteous } from "next/font/google";
+
+const righteous = Righteous({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-righteous"
+});
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +18,15 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Navbar */}
       <nav className="lg:hidden fixed top-0 left-0 w-full bg-blue-custom text-white p-2 px-4 flex justify-between items-center z-50">
-        <span className="text-lg font-bold">Algorithm Guru</span>
+        <div className={righteous.className}>
+          <span className="text-lg uppercase">Algorithm Guru</span>
+        </div>
         <button onClick={toggleSidebar} className="p-2 cursor-pointer">
           <i className={`fas text-[1.5rem] fa-${isOpen ? "times" : "bars"}`}></i>
         </button>
       </nav>
 
-      {/* Backdrop */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40 lg:hidden"
@@ -27,7 +34,6 @@ export default function Sidebar() {
         ></div>
       )}
 
-      {/* Sidebar */}
       <aside
         id="sidebar"
         className={`
@@ -42,9 +48,11 @@ export default function Sidebar() {
         }
       >
         <div className="flex flex-col justify-center items-center mb-6 hidden lg:flex">
-          <a href="/">
+          <a href="/" className="flex flex-col items-center">
             <img src="/img/capivara.webp" alt="Capibara Logo" className="w-30 h-30 px-3 pt-5" />
-            <span className="logo-title">Algorithm Guru</span>
+            <span className={`${righteous.className} text-[2rem] uppercase leading-none`}>
+              Algorithm Guru
+            </span>
           </a>
         </div>
         <SidebarNav />
