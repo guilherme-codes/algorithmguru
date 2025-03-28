@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Open_Sans, Righteous } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./ui/sidebar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const openSans = Open_Sans({
   subsets: ["latin"],
+  variable: "--font-open-sans"
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const righteous = Righteous({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-righteous"
 });
 
 export const metadata: Metadata = {
@@ -25,9 +27,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${openSans.variable} ${righteous.variable} antialiased flex`}
       >
         {children}
+        <aside id="sidebar" className="w-64 h-screen fixed top-0 left-0 bg-blue-custom text-white p-4 overflow-y-auto transition-transform transform">
+          <div className="flex flex-col justify-center items-center mb-6">
+            <a href="/">
+              <img src="/img/capivara.webp" alt="Capibara Logo" className="w-30 h-30 px-3 pt-5" />
+              <span className="logo-title">Algorithm Guru</span>
+            </a>
+          </div>
+          <Sidebar />
+        </aside>
+        <main id="mainContent" className="px-6 py-10 ml-64 transition-all xl:max-w-[60%]">
+        </main>
       </body>
     </html>
   );
