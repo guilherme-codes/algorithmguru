@@ -14,7 +14,7 @@ export const menuData: MenuItem[] = [
         label: 'Catalog',
         icon: 'fas fa-folder',
         subMenu: [
-          { label: 'Arrays', href: '/array.html' },
+          { label: 'Arrays', href: '/data-structures/arrays' },
           { label: 'Stacks', href: '/data-structures/stacks' }
         ]
       }
