@@ -16,7 +16,7 @@ export default function CodeButtons({ languages }: CodeButtonsProps) {
           className={
           `code-button ${language.name} ${language.name === selectedLanguage ? 'code-button--active' : ''}`
           }
-          
+          onClick={() => setSelectedLanguage(language.name)}
         >
           <img className="h-[53px] w-[53px]" src={`/img/${language.name}.svg`} alt="Code" />
         </button>
