@@ -1,8 +1,11 @@
 import CodeBlock from "@/app/ui/codeBlock";
-import { typescriptSample } from "./code-samples/tsx";
+import { typescriptSample } from "./code/typescript";
 import CodeButtons from "@/app/ui/codeButtons";
+import getLanguages from "@/app/service/get-languages";
 
-export default function Stacks() {
+export default async function Stacks() {
+  const languages = await getLanguages("data-structures", "stacks");
+
   return (
     <>
       <h1 className="font-bold text-5xl text-gray-700 mb-6">Stacks</h1>
@@ -63,7 +66,7 @@ export default function Stacks() {
         Code Samples
       </h2>
 
-    <CodeButtons />
+    <CodeButtons  languages={languages}/>
 
     <div className="py-5">
       <CodeBlock code={typescriptSample} 
