@@ -1,4 +1,4 @@
-export const goSample = `
+const goSample = `
 package main
 
 import (
@@ -57,3 +57,5 @@ func main() {
 	fmt.Println("IsEmpty:", stack.IsEmpty()) // true
 }
 `
+
+export default goSample;

@@ -1,4 +1,4 @@
-export const typescriptSample = `
+const typescriptSample = `
 class Stack<T> {
   private items: T[];
   
@@ -45,3 +45,5 @@ console.log(stack.peek()); // 20
 console.log(stack.pop()); // 20
 console.log(stack.size()); // 1
 `
+
+export default typescriptSample;

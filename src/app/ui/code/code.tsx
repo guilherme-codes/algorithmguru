@@ -10,14 +10,13 @@ export default function Code ({ codeSamples }: CodeProps) {
   
   return (
     <>
-      {selectedLanguage}
       <CodeButtons 
         languages={codeSamples.languages} 
         selectedLanguage={selectedLanguage} 
         setSelectedLanguage={setSelectedLanguage}
       />
       <CodeBlock 
-        languages={codeSamples.languages}
+        samples={codeSamples}
         selectedLanguage={selectedLanguage}
       />
     </>

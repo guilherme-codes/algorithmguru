@@ -7,19 +7,10 @@ import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-go';
 import 'prismjs/themes/prism.css';
 import { CodeBlockProps } from './types';
+import { getCodeSample } from '@/app/utils/get-code';
 
-const getCodeSample = async (language: string) => {
-  switch (language) {
-    case 'go':
-      const { goSample } = await import('@/app/data-structures/stacks/code/go');
-      return goSample;
-    case 'typescript':
-      const { typescriptSample } = await import('@/app/data-structures/stacks/code/typescript');
-      return typescriptSample;
-  }
-};
 
-export default function CodeBlock({ selectedLanguage }: CodeBlockProps) {
+export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps) {
   const codeRef = useRef<HTMLElement>(null);
   const [codeSample, setCodeSample] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -28,12 +19,11 @@ export default function CodeBlock({ selectedLanguage }: CodeBlockProps) {
     const loadCodeSample = async () => {
       setIsLoading(true);
       try {
-        const sample = await getCodeSample(selectedLanguage);
+        const sample = await getCodeSample(selectedLanguage, samples);
         setCodeSample(sample!);
         
       } catch (error) {
         console.error(`Failed to load ${selectedLanguage} sample:`, error);
-        setCodeSample('// Code sample failed to load');
       } finally {
         setIsLoading(false);
       }

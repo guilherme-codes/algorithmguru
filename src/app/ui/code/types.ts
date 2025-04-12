@@ -9,15 +9,17 @@ export type CodeButtonsProps = {
   setSelectedLanguage: Dispatch<SetStateAction<string>>
 }
 
+export type Samples = {
+  category: string,
+  type: string,
+  languages: Languages
+}
+
 export type CodeProps = {
-  codeSamples: {
-    category: string,
-    type: string,
-    languages: Languages
-  }
+  codeSamples: Samples 
 }
 
 export type CodeBlockProps = {
-  languages: Languages
+  samples: Samples
   selectedLanguage: string
 }
