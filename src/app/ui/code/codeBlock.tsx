@@ -3,7 +3,6 @@
 import { useEffect, useState, useRef } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-jsx';
 import 'prismjs/components/prism-go';
 import 'prismjs/themes/prism.css';
 import { CodeBlockProps } from './types';
@@ -38,7 +37,7 @@ export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps)
 
   return (
     <div className="py-5">
-      <pre className={`language-${selectedLanguage}`} suppressHydrationWarning>
+      <pre suppressHydrationWarning>
         <code
           ref={codeRef}
           className={`language-${selectedLanguage}`}
