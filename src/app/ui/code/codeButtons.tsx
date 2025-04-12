@@ -1,12 +1,8 @@
 'use client';
-import { useState } from "react";
 
-type CodeButtonsProps = { 
-  languages: Array<{ name: string; ext: string }> 
-}
+import { CodeButtonsProps } from "./types";
 
-export default function CodeButtons({ languages }: CodeButtonsProps) {  
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0].name);
+export default function CodeButtons({ languages, selectedLanguage, setSelectedLanguage }: CodeButtonsProps) {  
 
   return (
     <div className="flex gap-3">
