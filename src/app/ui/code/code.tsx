@@ -5,18 +5,19 @@ import CodeBlock from "./codeBlock";
 import CodeButtons from "./codeButtons";
 import { CodeProps } from "./types";
 
-export default function Code ({ languages }: CodeProps) {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0].name);
+export default function Code ({ codeSamples }: CodeProps) {
+  const [selectedLanguage, setSelectedLanguage] = useState(codeSamples.languages[0].name);
   
   return (
     <>
+      {selectedLanguage}
       <CodeButtons 
-        languages={languages} 
+        languages={codeSamples.languages} 
         selectedLanguage={selectedLanguage} 
         setSelectedLanguage={setSelectedLanguage}
       />
       <CodeBlock 
-        languages={languages}
+        languages={codeSamples.languages}
         selectedLanguage={selectedLanguage}
       />
     </>

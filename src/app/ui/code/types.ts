@@ -10,7 +10,11 @@ export type CodeButtonsProps = {
 }
 
 export type CodeProps = {
-  languages: Languages
+  codeSamples: {
+    category: string,
+    type: string,
+    languages: Languages
+  }
 }
 
 export type CodeBlockProps = {

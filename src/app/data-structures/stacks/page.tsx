@@ -2,7 +2,7 @@ import getLanguages from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
 
 export default async function Stacks() {
-  const languages = await getLanguages("data-structures", "stacks");
+  const codeSamples = await getLanguages("data-structures", "stacks");
 
   return (
     <>
@@ -64,7 +64,7 @@ export default async function Stacks() {
         Code Samples
       </h2>
 
-      <Code languages={languages} />
+      <Code codeSamples={codeSamples} />
 
     </>
   )

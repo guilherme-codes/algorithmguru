@@ -21,7 +21,13 @@ export async function GET(request: Request) {
       return { name, ext: ext.slice(1) };
     });
 
-    return new Response(JSON.stringify(languages), {
+    const response = {
+      category,
+      type,
+      languages
+    }
+
+    return new Response(JSON.stringify(response), {
       status: 200,
       headers: { 'Content-Type': 'application/json' }
     });
