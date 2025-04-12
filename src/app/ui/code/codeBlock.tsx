@@ -9,7 +9,6 @@ import 'prismjs/themes/prism.css';
 import { CodeBlockProps } from './types';
 import { getCodeSample } from '@/app/utils/get-code';
 
-
 export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps) {
   const codeRef = useRef<HTMLElement>(null);
   const [codeSample, setCodeSample] = useState<string>('');
@@ -21,7 +20,6 @@ export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps)
       try {
         const sample = await getCodeSample(selectedLanguage, samples);
         setCodeSample(sample!);
-        
       } catch (error) {
         console.error(`Failed to load ${selectedLanguage} sample:`, error);
       } finally {
@@ -41,7 +39,11 @@ export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps)
   return (
     <div className="py-5">
       <pre className={`language-${selectedLanguage}`} suppressHydrationWarning>
-        <code ref={codeRef} suppressHydrationWarning>
+        <code
+          ref={codeRef}
+          className={`language-${selectedLanguage}`}
+          suppressHydrationWarning
+        >
           {codeSample}
         </code>
       </pre>
