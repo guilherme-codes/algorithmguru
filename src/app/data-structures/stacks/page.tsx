@@ -1,8 +1,8 @@
-import getLanguages from "@/app/service/get-languages";
+import getCodeSamples from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
 
 export default async function Stacks() {
-  const codeSamples = await getLanguages("data-structures", "stacks");
+  const codeSamples = await getCodeSamples("data-structures", "stacks");
 
   return (
     <>
