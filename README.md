@@ -6,9 +6,9 @@
 
 ## Pending Tasks
 - [ ] Add Front Page.
-- [ ] Implement Navigation Buttons Logic
-- [ ] Implement Code Samples Logic
-    - [ ] only show the code button if the code sample is available
+- [x] Implement Navigation Buttons Logic
+- [x] Implement Code Samples Logic
+    - [x] only show the code button if the code sample is available
 - [ ] Add more code samples
 - [ ] Darkmode ?
 - [ ] Add Search Functionality
