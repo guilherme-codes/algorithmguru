@@ -1,4 +1,4 @@
-export const typescriptSample = `
+const typescriptSample = `
 // Basic Array Declaration and Operations
 const numbers: number[] = [1, 2, 3, 4, 5];
 
@@ -30,3 +30,5 @@ const matrix: number[][] = [
 ];
 console.log(matrix[1][1]);  // 5
 `
+
+export default typescriptSample;
