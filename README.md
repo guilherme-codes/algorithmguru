@@ -5,12 +5,12 @@
 - [x] Move to NextJs
 
 ## Pending Tasks
-- [ ] Implement Navigation Buttons Logic
-- [ ] Implement Code Samples Logic
-    - [ ] only show the code button if the code sample is available
+- [ ] Add Front Page.
+- [x] Implement Navigation Buttons Logic
+- [x] Implement Code Samples Logic
+    - [x] only show the code button if the code sample is available
 - [ ] Add more code samples
 - [ ] Darkmode ?
-- [ ] Add Front Page.
 - [ ] Add Search Functionality
 - [ ] Add 404 Page.
 - [ ] Add Site Map XML.
