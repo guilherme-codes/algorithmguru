@@ -87,4 +87,8 @@ body {
 }
 
 
+a.link {
+  @apply text-blue-600 hover:text-blue-800;
+  cursor: pointer;
+}
 
