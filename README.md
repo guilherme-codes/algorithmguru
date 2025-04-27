@@ -5,7 +5,7 @@
 - [x] Move to NextJs
 
 ## Pending Tasks
-- [ ] Add Front Page.
+- [x] Add Front Page.
 - [x] Implement Navigation Buttons Logic
 - [x] Implement Code Samples Logic
     - [x] only show the code button if the code sample is available
@@ -93,7 +93,6 @@
   - [ ] Add Videos Page
   - [ ] Add Courses Page
 
-- [x] Add Home Page
 - [ ] Add Blog Pages
 - [ ] Add About Us Page
 - [ ] Add Contact Us Page
