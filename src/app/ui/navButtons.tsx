@@ -11,7 +11,7 @@ export default function NavButtons() {
 
       <div className="w-1/2 flex flex-col">
         <p className="uppercase font-bold text-right text-blue-custom">read next</p>
-        <a href="/pages/data-structure/arrays.html" className="btn-info">
+        <a href="/pages/data-structure/arrays" className="btn-info">
           Arrays
           <i className="ml-2 fa fa-arrow-right" aria-hidden="true"></i>
         </a>
