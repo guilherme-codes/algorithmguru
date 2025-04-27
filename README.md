@@ -22,7 +22,7 @@
 
 ## Data Structures Pages
 - [ ] Add Data Structures Pages
-  - [ ] Add Array Page
+  - [x] Add Array Page
   - [ ] Add Linked List Page
   - [ ] Add Stack Page
   - [ ] Add Queue Page
@@ -93,6 +93,7 @@
   - [ ] Add Videos Page
   - [ ] Add Courses Page
 
+- [x] Add Home Page
 - [ ] Add Blog Pages
 - [ ] Add About Us Page
 - [ ] Add Contact Us Page
