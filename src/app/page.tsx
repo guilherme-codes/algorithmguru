@@ -9,7 +9,7 @@ export default function Home() {
       </h1>
 
       <p>
-        This project is your friendly guide to learning algorithms and data structures in a fun, simple, and engaging way.
+        This is your friendly guide to learning algorithms and data structures in a fun, simple, and engaging way.
       </p>
 
       <p>
