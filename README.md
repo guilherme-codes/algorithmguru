@@ -24,7 +24,7 @@
 - [ ] Add Data Structures Pages
   - [x] Add Array Page
   - [ ] Add Linked List Page
-  - [ ] Add Stack Page
+  - [x] Add Stack Page
   - [ ] Add Queue Page
   - [ ] Add Tree Page
   - [ ] Add Graph Page
