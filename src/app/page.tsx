@@ -57,7 +57,7 @@ export default function Home() {
       <div className="flex flex-row mt-6 space-between">
         <Image 
           src="/img/data-structures.webp" 
-          alt="Algorithms" 
+          alt="Data Structures" 
           width={498} 
           height={493} 
         />
