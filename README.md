@@ -5,7 +5,7 @@
 - [x] Move to NextJs
 
 ## Pending Tasks
-- [ ] Add Front Page.
+- [x] Add Front Page.
 - [x] Implement Navigation Buttons Logic
 - [x] Implement Code Samples Logic
     - [x] only show the code button if the code sample is available
@@ -22,9 +22,9 @@
 
 ## Data Structures Pages
 - [ ] Add Data Structures Pages
-  - [ ] Add Array Page
+  - [x] Add Array Page
   - [ ] Add Linked List Page
-  - [ ] Add Stack Page
+  - [x] Add Stack Page
   - [ ] Add Queue Page
   - [ ] Add Tree Page
   - [ ] Add Graph Page

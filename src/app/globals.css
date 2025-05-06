@@ -4,6 +4,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --custom-blue-100: #00a6e7;
+  --custom-blue-200: #0394ce;
 }
 
 @theme inline {
@@ -11,6 +13,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-open-sans);
   --font-mono: var(--font-righteous);
+  --color-primary-100: var(--custom-blue-100);
+  --color-primary-200: var(--custom-blue-200);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,4 +91,16 @@ body {
 }
 
 
+a.link {
+  @apply text-blue-400 hover:text-blue-500 cursor-pointer;
+}
 
+.btn-info {
+  @apply text-white px-4 py-2 rounded;
+  @apply bg-primary-100 hover:bg-primary-200 transition duration-300 ease-in-out text-center;
+}
+
+.btn-disabled {
+  @apply bg-gray-500 text-white px-4 py-2 rounded; 
+  @apply hover:bg-gray-600 transition duration-300 ease-in-out text-center
+}
