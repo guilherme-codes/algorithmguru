@@ -2,8 +2,11 @@
 
 **The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and beginner-friendly way.
 
-Inspired by the teaching style of [Refactoring.Guru](https://refactoring.guru/), this project aims to explain complex topics through:
+<img src="https://github.com/user-attachments/assets/0dc2278d-e732-4132-8601-5ca6183ce0ff" width="400" />
 
+<br/>
+
+## This project aims to explain complex topics through:
 - ✨ Simple, no-jargon language  
 - 🧠 Relatable analogies  
 - 🛠️ Practical, hands-on examples  
