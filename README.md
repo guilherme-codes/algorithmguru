@@ -24,16 +24,12 @@ Algorithms are step-by-step instructions that solve problems or perform tasks. I
 - Classic examples like sorting, searching, and recursion
 - When and why to use each one
 
----
-
 ### 🧱 Data Structures
 
 Data structures are containers for organizing and storing data efficiently. You'll learn about:
 - Arrays, Linked Lists, Stacks, Queues
 - Trees, Graphs, Hash Tables
 - Real-world use cases and performance trade-offs
-
----
 
 ## 🛠️ Tech Stack
 
