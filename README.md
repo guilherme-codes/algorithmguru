@@ -14,8 +14,6 @@
 
 Whether you're just starting out or brushing up on your skills, this project will help you *actually understand* how algorithms and data structures work — and why they matter.
 
----
-
 ## 🚀 Project Highlights
 
 ### 🔍 Algorithms
@@ -45,13 +43,9 @@ This site is built with:
 - [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS
 - Responsive and accessible by default
 
----
-
 ## 💡 Inspiration
 
 This project is inspired by the clarity and design of [Refactoring.Guru](https://refactoring.guru/), which explains topics like design patterns and SOLID principles in a visual and friendly way.
-
----
 
 ## 📌 Future Plans
 
@@ -59,13 +53,11 @@ This project is inspired by the clarity and design of [Refactoring.Guru](https:/
 - Include beginner exercises and challenges  
 - Add animations to visualize concepts  
 
----
 
 ## 📬 Contributing
 
 Pull requests are welcome! If you have ideas or want to add a new explanation or example, feel free to open an issue or a PR.
 
----
 
 ## 📖 License
 
