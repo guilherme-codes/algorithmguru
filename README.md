@@ -1,6 +1,6 @@
 # Welcome to The Algorithm Guru
 
-**The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and beginner-friendly way.
+**The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and friendly way.
 
 <img src="https://github.com/user-attachments/assets/0dc2278d-e732-4132-8601-5ca6183ce0ff" width="400" />
 
