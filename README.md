@@ -1,4 +1,4 @@
-# The Algorithm Guru
+# Welcome to The Algorithm Guru
 
 **The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and beginner-friendly way.
 
