@@ -6,7 +6,7 @@
 
 <br/>
 
-## This project aims to explain complex topics through:
+### This project aims to explain complex topics through:
 - ✨ Simple, no-jargon language  
 - 🧠 Relatable analogies  
 - 🛠️ Practical, hands-on examples  
