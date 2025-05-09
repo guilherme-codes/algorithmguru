@@ -6,7 +6,7 @@ export default async function Arrays() {
 
     return (
         <>
-            <h1 className="font-bold text-5xl text-gray-700 mb-6">Arrays</h1>
+            <h1 className="font-bold text-5xl light:text-gray-700 mb-6">Arrays</h1>
             <p>
                 An array is a fundamental data structure that stores a collection of elements in a contiguous memory location. Each element in an array can be accessed directly by its index, making it one of the most efficient and widely used data structures in programming.
             </p>
@@ -19,7 +19,7 @@ export default async function Arrays() {
                 <img src="/img/array-visualization.webp" alt="Array Visualization" className="w-[80%] h-auto mb-6" />
             </div>
 
-            <h2 className="font-bold text-3xl text-gray-700 my-6">
+            <h2 className="font-bold text-3xl light:text-gray-700 my-6">
                 <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
                 Key Characteristics
             </h2>
@@ -40,7 +40,7 @@ export default async function Arrays() {
                 <img src="/img/array-memory.webp" alt="Array Memory Layout" className="w-[500px] h-auto mb-6" />
             </div>
 
-            <h2 className="font-bold text-3xl text-gray-700 my-6">
+            <h2 className="font-bold text-3xl light:text-gray-700 my-6">
                 <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
                 Basic Operations
             </h2>
@@ -57,7 +57,7 @@ export default async function Arrays() {
                 <li><strong>Update:</strong> Changing the value of an element at a given index.</li>
             </ul>
 
-            <h2 className="font-bold text-3xl text-gray-700 my-6">
+            <h2 className="font-bold text-3xl light:text-gray-700 my-6">
                 <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
                 Performance Characteristics
             </h2>
@@ -70,7 +70,7 @@ export default async function Arrays() {
                 <li><strong>Search (Sorted):</strong> O(log n) - Binary search possible</li>
             </ul>
 
-            <h2 className="font-bold text-3xl text-gray-700 my-6">
+            <h2 className="font-bold text-3xl light:text-gray-700 my-6">
                 <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
                 Use Cases
             </h2>
@@ -83,7 +83,7 @@ export default async function Arrays() {
                 <li><strong>Algorithm Implementations:</strong> Sorting, searching, and many other algorithms</li>
             </ul>
 
-            <h2 className="font-bold text-3xl text-gray-700 my-6 mt-10">
+            <h2 className="font-bold text-3xl light:text-gray-700 my-6 mt-10">
                 <i className="mr-2 fa fa-code" aria-hidden="true"></i>
                 Code Samples
             </h2>

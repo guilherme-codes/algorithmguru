@@ -6,7 +6,7 @@ export default async function Stacks() {
 
   return (
     <>
-      <h1 className="font-bold text-5xl text-gray-700 mb-6">Stacks</h1>
+      <h1 className="font-bold text-5xl light:text-gray-700 mb-6">Stacks</h1>
       <p>
         A stack is a linear data structure that follows the Last In First Out (LIFO) principle. This means that the last element added to the stack will be the first one to be removed. You can think of a stack as a collection of items arranged in a vertical manner, where you can only add or remove items from the top.
       </p>
@@ -19,7 +19,7 @@ export default async function Stacks() {
         <img src="/img/stacks.webp" alt="Stack" className="w-[80%] h-auto mb-6" />
       </div>
 
-      <h2 className="font-bold text-3xl text-gray-700 my-6">
+      <h2 className="font-bold text-3xl light:text-gray-700 my-6">
         <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
         How to Implement?
       </h2>
@@ -43,7 +43,7 @@ export default async function Stacks() {
         <img src="/img/stack-diagram.webp" alt="Stack Implementation" className="w-[500px] h-auto mb-6" />
       </div>
 
-      <h2 className="font-bold text-3xl text-gray-700 my-6">
+      <h2 className="font-bold text-3xl light:text-gray-700 my-6">
         <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
         Use Cases
       </h2>
@@ -59,7 +59,7 @@ export default async function Stacks() {
         </ul>
 
 
-      <h2 className="font-bold text-3xl text-gray-700 my-6 mt-10">
+      <h2 className="font-bold text-3xl light:text-gray-700 my-6 mt-10">
         <i className="mr-2 fa fa-code" aria-hidden="true"></i>
         Code Samples
       </h2>
