@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1 className="font-bold text-4xl text-gray-700 mb-6">
+      <h1 className="font-bold text-4xl light:text-gray-700 mb-6">
         Welcome to The Algorithm Guru!
       </h1>
 
@@ -37,7 +37,7 @@ export default function Home() {
 
         <div className="ml-6 flex flex-col justify-between">
           <div>
-            <h2 className="font-bold text-2xl text-gray-700 mt-4">
+            <h2 className="font-bold text-2xl light:text-gray-700 mt-4">
               Algorithms
             </h2>
             <p>
@@ -63,7 +63,7 @@ export default function Home() {
         />
         <div className="ml-6 flex flex-col justify-between">
           <div>
-            <h2 className="font-bold text-2xl text-gray-700 mt-4">
+            <h2 className="font-bold text-2xl light:text-gray-700 mt-4">
               Data Structures
             </h2>
             <p>

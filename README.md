@@ -1,106 +1,73 @@
-# Project TODO List
+# The Algorithm Guru
 
-## Main Tasks
-- [x] Add base layout
-- [x] Move to NextJs
+**The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and beginner-friendly way.
 
-## Pending Tasks
-- [x] Add Front Page.
-- [x] Implement Navigation Buttons Logic
-- [x] Implement Code Samples Logic
-    - [x] only show the code button if the code sample is available
-- [ ] Add more code samples
-- [ ] Darkmode ?
-- [ ] Add Search Functionality
-- [ ] Add 404 Page.
-- [ ] Add Site Map XML.
-- [ ] Add Structed Data.
-- [ ] Add Accessibility Resources
-- [ ] Add SEO Resources
-- [ ] Add PWA Resources
-- [ ] Add Analytics
+Inspired by the teaching style of [Refactoring.Guru](https://refactoring.guru/), this project aims to explain complex topics through:
 
-## Data Structures Pages
-- [ ] Add Data Structures Pages
-  - [x] Add Array Page
-  - [ ] Add Linked List Page
-  - [x] Add Stack Page
-  - [ ] Add Queue Page
-  - [ ] Add Tree Page
-  - [ ] Add Graph Page
-  - [ ] Add Hash Table Page
-  - [ ] Add Heap Page
-  - [ ] Add Trie Page
-  - [ ] Add Set Page
-  - [ ] Add Map Page
-  - [ ] Add Dictionary Page
-  - [ ] Add String Page
-  - [ ] Add Matrix Page
+- ✨ Simple, no-jargon language  
+- 🧠 Relatable analogies  
+- 🛠️ Practical, hands-on examples  
+- 💡 Visuals and structured layouts  
 
-## Algorithms Pages
-- [ ] Add Algorithms Pages
-  - [ ] Add Sorting Algorithms Page
-    - [ ] Add Bubble Sort Page
-    - [ ] Add Selection Sort Page
-    - [ ] Add Insertion Sort Page
-    - [ ] Add Merge Sort Page
-    - [ ] Add Quick Sort Page
-    - [ ] Add Heap Sort Page
-    - [ ] Add Counting Sort Page
-    - [ ] Add Radix Sort Page
-    - [ ] Add Bucket Sort Page
-  
-  - [ ] Add Searching Algorithms Page
-    - [ ] Add Linear Search Page
-    - [ ] Add Binary Search Page
-    - [ ] Add Ternary Search Page
-    - [ ] Add Interpolation Search Page
-    - [ ] Add Exponential Search Page
-    - [ ] Add Jump Search Page
-    - [ ] Add Fibonacci Search Page
-  
-  - [ ] Add String Algorithms Page
-    - [ ] Add KMP Algorithm Page
-    - [ ] Add Rabin Karp Algorithm Page
-    - [ ] Add Boyer Moore Algorithm Page
-    - [ ] Add Z Algorithm Page
-  
-  - [ ] Add Graph Algorithms Page
-  - [ ] Add Dynamic Programming Algorithms Page
-  - [ ] Add Greedy Algorithms Page
-  - [ ] Add Backtracking Algorithms Page
-  - [ ] Add Divide and Conquer Algorithms Page
-  - [ ] Add Bit Manipulation Algorithms Page
-  - [ ] Add Mathematical Algorithms Page
+Whether you're just starting out or brushing up on your skills, this project will help you *actually understand* how algorithms and data structures work — and why they matter.
 
-## Problems Pages
-- [ ] Difficulty Level
-    - [ ]  Beginner
-    - [ ] Intermediate
-    - [ ] Advanced
-- [ ] Algorithm Type
-    - [ ] Sorting (Bubble Sort, Merge Sort, Quick Sort)
-    - [ ] Searching (Binary Search, Linear Search)
-    - [ ] Data Structures (Lists, Stacks, Queues, Trees, Graphs)
-    - [ ] Dynamic Programming
-    - [ ] Graph Algorithms (Dijkstra, Floyd-Warshall, DFS, BFS)
-    - [ ] Mathematical Algorithms (GCD, Sieve of Eratosthenes)   
+---
 
-## Additional Pages
-- [ ] Add Resources Pages
-  - [ ] Add Books Page
-  - [ ] Add Websites Page
-  - [ ] Add Videos Page
-  - [ ] Add Courses Page
+## 🚀 Project Highlights
 
-- [ ] Add Blog Pages
-- [ ] Add About Us Page
-- [ ] Add Contact Us Page
-- [ ] Add Privacy Policy Page
-- [ ] Add Terms of Service Page
-- [ ] Add BigO Page
-- [ ] Add Contributors Guide
+### 🔍 Algorithms
 
-## Project Infrastructure
-- [ ] Define Deployment Strategy
-- [ ] Set Up CI / CD
+Algorithms are step-by-step instructions that solve problems or perform tasks. In this section, you'll explore:
+- What algorithms are
+- How they work
+- Classic examples like sorting, searching, and recursion
+- When and why to use each one
+
+---
+
+### 🧱 Data Structures
+
+Data structures are containers for organizing and storing data efficiently. You'll learn about:
+- Arrays, Linked Lists, Stacks, Queues
+- Trees, Graphs, Hash Tables
+- Real-world use cases and performance trade-offs
+
+---
+
+## 🛠️ Tech Stack
+
+This site is built with:
+
+- [Next.js](https://nextjs.org/) – React-based framework
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS
+- Responsive and accessible by default
+
+---
+
+## 💡 Inspiration
+
+This project is inspired by the clarity and design of [Refactoring.Guru](https://refactoring.guru/), which explains topics like design patterns and SOLID principles in a visual and friendly way.
+
+---
+
+## 📌 Future Plans
+
+- Add interactive code examples  
+- Include beginner exercises and challenges  
+- Add animations to visualize concepts  
+
+---
+
+## 📬 Contributing
+
+Pull requests are welcome! If you have ideas or want to add a new explanation or example, feel free to open an issue or a PR.
+
+---
+
+## 📖 License
+
+MIT License. Free to use, learn from, and share 🌍
+
+---
+
+Made with ❤️ for learners everywhere.

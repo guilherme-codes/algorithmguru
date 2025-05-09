@@ -4,7 +4,7 @@ import NavButtons from "../ui/navButtons";
 export default function DataStructures() {
   return (
     <>
-        <h1 className="font-bold text-5xl text-gray-700 mb-6">What's a Data Structure?</h1>
+        <h1 className="font-bold text-5xl light:text-gray-700 mb-6">What's a Data Structure?</h1>
         <p>
           A data structure is a way of organizing and storing a set of data so that we can efficiently access and manipulate it. The chosen data structure will determine how the data is related, as well as provide methods for us to manipulate such data.
         </p>
@@ -21,7 +21,7 @@ export default function DataStructures() {
           height={807}
         />
 
-        <h2 className="font-bold text-3xl text-gray-700 my-6">
+        <h2 className="font-bold text-3xl light:text-gray-700 my-6">
           <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
           How Are Data Structures Implemented?
         </h2>
@@ -30,22 +30,22 @@ export default function DataStructures() {
         By combining primitive types such as integers, booleans, and chars with manipulation functions, we can create more complex data structures that allow operations like searching, sorting, insertion, and removal.
         </p>
 
-        <h2 className="font-bold text-3xl text-gray-700 my-6">
+        <h2 className="font-bold text-3xl light:text-gray-700 my-6">
           <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
           Linear and Non-Linear Data Structures
         </h2>
 
-        <h3 className="font-bold text-1xl text-gray-700">Linear</h3>
+        <h3 className="font-bold text-1xl light:text-gray-700">Linear</h3>
         <p>
         These are structures where data is organized in a line, and items are inserted one after another in sequence. Some linear structures include Arrays, Linked Lists, Queues, and Stacks.
         </p>
 
-        <h3 className="font-bold text-1xl text-gray-700">Non-Linear</h3>
+        <h3 className="font-bold text-1xl light:text-gray-700">Non-Linear</h3>
         <p>
           These structures are not organized sequentially, and their organization depends on factors other than the order of insertion. Examples of non-linear structures include Trees and Graphs.
         </p>
 
-        <h2 className="font-bold text-3xl text-gray-700 my-6">
+        <h2 className="font-bold text-3xl light:text-gray-700 my-6">
           <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
           Common Types of Data Structures
         </h2>
