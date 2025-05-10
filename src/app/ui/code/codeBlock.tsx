@@ -27,7 +27,7 @@ export default function CodeBlock({ selectedLanguage, samples }: CodeBlockProps)
     };
 
     loadCodeSample();
-  }, [selectedLanguage]);
+  }, [selectedLanguage, samples]);
 
   useEffect(() => {
     if (codeRef.current && !isLoading) {

@@ -1,6 +1,7 @@
 const typescriptSample = `
-// Note: In TypeScript and JavaScript, arrays are not traditional "arrays" in the strictest sense,
-// but rather complex objects that can be dynamic and accept different primitive types.
+// Note: In TypeScript and JavaScript, arrays are not traditional "arrays" 
+// in the strictest sense, but rather complex objects that can be dynamic 
+// and accept different primitive types.
 
 // Basic Array Declaration and Operations
 const numbers: number[] = [1, 2, 3, 4, 5];

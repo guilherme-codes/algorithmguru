@@ -1,5 +1,6 @@
 import getCodeSamples from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
+import Image from "next/image";
 
 export default async function Stacks() {
   const codeSamples = await getCodeSamples("data-structures", "stacks");
@@ -16,7 +17,13 @@ export default async function Stacks() {
       </p>
 
       <div className="flex justify-center">
-        <img src="/img/stacks.webp" alt="Stack" className="w-[80%] h-auto mb-6" />
+        <Image 
+          src="/img/stacks.webp" 
+          alt="Stack" 
+          className="w-[80%] h-auto mb-6" 
+          width={500}
+          height={500}
+        />
       </div>
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">
@@ -40,7 +47,13 @@ export default async function Stacks() {
         </ul>
 
       <div className="flex justify-center">
-        <img src="/img/stack-diagram.webp" alt="Stack Implementation" className="w-[500px] h-auto mb-6" />
+        <Image 
+          src="/img/stack-diagram.webp" 
+          alt="Stack Implementation" 
+          className="mb-6"
+          width={500}
+          height={500} 
+        />
       </div>
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">
@@ -65,7 +78,6 @@ export default async function Stacks() {
       </h2>
 
       <Code codeSamples={codeSamples} />
-
     </>
   )
 }

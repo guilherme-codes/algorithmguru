@@ -1,5 +1,6 @@
 import getCodeSamples from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
+import Image from "next/image";
 
 export default async function Arrays() {
     const codeSamples = await getCodeSamples("data-structures", "arrays");
@@ -16,7 +17,13 @@ export default async function Arrays() {
             </p>
 
             <div className="flex justify-center">
-                <img src="/img/array-visualization.webp" alt="Array Visualization" className="w-[80%] h-auto mb-6" />
+                <Image 
+                    src="/img/array-visualization.webp" 
+                    alt="Array Visualization" 
+                    className="w-[80%] h-auto mb-6"
+                    width={500}
+                    height={500}
+                />
             </div>
 
             <h2 className="font-bold text-3xl light:text-gray-700 my-6">
@@ -37,7 +44,13 @@ export default async function Arrays() {
             </ul>
 
             <div className="flex justify-center">
-                <img src="/img/array-memory.webp" alt="Array Memory Layout" className="w-[500px] h-auto mb-6" />
+                <Image 
+                    src="/img/array-memory.webp" 
+                    alt="Array Memory Layout" 
+                    className="w-[500px] h-auto mb-6" 
+                    width={500}
+                    height={500}
+                />
             </div>
 
             <h2 className="font-bold text-3xl light:text-gray-700 my-6">

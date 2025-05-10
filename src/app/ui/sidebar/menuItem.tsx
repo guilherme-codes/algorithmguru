@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { MenuItem } from "./types";
 import Link from "next/link";
 
@@ -13,18 +13,18 @@ export function MenuItemComponent ({ item, level = 0, pathname = '' }: {
   const hasSubMenu = item.subMenu && item.subMenu.length > 0;
   const isExactMatch = item.href === pathname;
 
-  const isRouteInBranch = (menuItem: MenuItem): boolean => {
+  const isRouteInBranch = useCallback((menuItem: MenuItem): boolean => {
     if (menuItem.href === pathname) return true;
     return menuItem.subMenu 
       ? menuItem.subMenu.some(subItem => isRouteInBranch(subItem)) 
       : false;
-  };
+  }, [pathname]);
 
   useEffect(() => {
     if (hasSubMenu && isRouteInBranch(item)) {
       setIsOpen(true);
     }
-  }, [pathname, item]);
+  }, [pathname, item, hasSubMenu, isRouteInBranch]);
 
   const renderItemContent = () => (
     <div 

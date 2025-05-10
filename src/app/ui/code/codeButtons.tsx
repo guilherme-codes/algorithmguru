@@ -1,12 +1,13 @@
 'use client';
 
+import Image from "next/image";
 import { CodeButtonsProps } from "./types";
 
 export default function CodeButtons({ languages, selectedLanguage, setSelectedLanguage }: CodeButtonsProps) {  
 
   return (
     <div className="flex gap-3">
-      {languages.map((language, i) => (
+      {languages.map((language) => (
         <button 
           key={language.name} 
           className={
@@ -14,7 +15,12 @@ export default function CodeButtons({ languages, selectedLanguage, setSelectedLa
           }
           onClick={() => setSelectedLanguage(language.name)}
         >
-          <img className="h-[53px] w-[53px]" src={`/img/${language.name}.svg`} alt="Code" />
+          <Image 
+            width={53}
+            height={53}
+            src={`/img/${language.name}.svg`} 
+            alt="Code" 
+            />
         </button>
       ))}
     </div>

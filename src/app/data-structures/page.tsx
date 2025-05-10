@@ -4,7 +4,7 @@ import NavButtons from "../ui/navButtons";
 export default function DataStructures() {
   return (
     <>
-        <h1 className="font-bold text-5xl light:text-gray-700 mb-6">What's a Data Structure?</h1>
+        <h1 className="font-bold text-5xl light:text-gray-700 mb-6">What&apos;s a Data Structure?</h1>
         <p>
           A data structure is a way of organizing and storing a set of data so that we can efficiently access and manipulate it. The chosen data structure will determine how the data is related, as well as provide methods for us to manipulate such data.
         </p>

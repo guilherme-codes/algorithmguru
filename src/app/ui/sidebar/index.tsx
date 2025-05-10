@@ -3,6 +3,7 @@ import { useState } from "react";
 import SidebarNav from "./nav";
 import { Righteous } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const righteous = Righteous({
   weight: ["400"],
@@ -49,7 +50,7 @@ export default function Sidebar() {
         }
       >
         <div className="flex flex-col justify-center items-center mb-6 hidden lg:flex">
-          <a href="/" className="flex flex-col items-center">
+          <Link href="/" className="flex flex-col items-center">
             <Image 
               src="/img/capivara.webp"
               alt="Capibara Logo" 
@@ -60,7 +61,7 @@ export default function Sidebar() {
             <span className={`${righteous.className} text-[2rem] uppercase leading-none text-center`}>
               Algorithm Guru
             </span>
-          </a>
+          </Link>
         </div>
         <SidebarNav />
       </aside>

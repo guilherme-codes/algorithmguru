@@ -1,8 +1,6 @@
 'use client'
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import { usePathname } from 'next/navigation';
-import { MenuItem } from './types';
 import { MenuItemComponent } from './menuItem';
 import { menuData } from './data';
 
