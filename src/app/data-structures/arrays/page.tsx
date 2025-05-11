@@ -1,12 +1,20 @@
 import getCodeSamples from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
+import Head from "next/head";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Arrays - The Algorithm Guru",
+};
 
 export default async function Arrays() {
   const codeSamples = await getCodeSamples("data-structures", "arrays");
 
   return (
     <>
+      <Head>
+        <title>Arrays - The Algorithm Guru</title>
+      </Head>
       <h1 className="font-bold text-5xl light:text-gray-700 mb-6">Arrays</h1>
       <p>
         An array is a fundamental data structure that stores a collection of

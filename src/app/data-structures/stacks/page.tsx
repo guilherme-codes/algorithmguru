@@ -1,12 +1,20 @@
 import getCodeSamples from "@/app/service/get-languages";
 import Code from "@/app/ui/code/code";
+import Head from "next/head";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Stacks - The Algorithm Guru",
+}
 
 export default async function Stacks() {
   const codeSamples = await getCodeSamples("data-structures", "stacks");
 
   return (
     <>
+      <Head>
+        <title>Stacks - The Algorithm Guru</title>
+      </Head>
       <h1 className="font-bold text-5xl light:text-gray-700 mb-6">Stacks</h1>
       <p>
         A stack is a linear data structure that follows the Last In First Out (LIFO) principle. This means that the last element added to the stack will be the first one to be removed. You can think of a stack as a collection of items arranged in a vertical manner, where you can only add or remove items from the top.

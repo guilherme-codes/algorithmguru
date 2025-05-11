@@ -1,9 +1,17 @@
 import Image from "next/image";
 import NavButtons from "../ui/navButtons";
+import Head from "next/head";
+
+export const metadata = {
+  title: "Data Structures - The Algorithm Guru",
+};
 
 export default function DataStructures() {
   return (
     <>
+      <Head>
+        <title>Data Structures - The Algorithm Guru</title>
+      </Head>
       <h1 className="font-bold text-5xl light:text-gray-700 mb-6">
         What&apos;s a Data Structure?
       </h1>
