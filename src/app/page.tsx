@@ -49,7 +49,6 @@ export default function Home() {
             alt="Algorithms"
             style={{ width: '100%', height: 'auto' }}
           />
-
         </div>
 
         <div className="col-span-12 md:col-span-9 flex flex-col justify-between">

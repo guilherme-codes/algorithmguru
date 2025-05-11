@@ -16,13 +16,14 @@ export default async function Stacks() {
         Imagine you are at home, and every plate you use for eating is placed on a stack in your sink, with each plate being placed on top of the previous one. Eventually, you decide to load them all into the dishwasher, removing them one by one, with the last plate used always being the first one to go into the dishwasher. As you remove each plate, you can check whether the stack is empty or see the total number of plates still left.
       </p>
 
-      <div className="flex justify-center">
-        <Image 
-          src="/img/stacks.webp" 
-          alt="Stack" 
-          className="w-[80%] h-auto mb-6" 
-          width={500}
-          height={500}
+      <div className="flex justify-center m-10">
+        <Image
+          src="/img/stacks.webp"
+          width={0}
+          height={0}
+          sizes="100vw"
+          alt="Stack"
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
 
@@ -47,12 +48,13 @@ export default async function Stacks() {
         </ul>
 
       <div className="flex justify-center">
-        <Image 
-          src="/img/stack-diagram.webp" 
-          alt="Stack Implementation" 
-          className="mb-6"
-          width={500}
-          height={500} 
+        <Image
+          src="/img/stack-diagram.webp"
+          width={0}
+          height={0}
+          sizes="100vw"
+          alt="Stack Implementation"
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
 
