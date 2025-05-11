@@ -15,12 +15,14 @@ export default function CodeButtons({ languages, selectedLanguage, setSelectedLa
           }
           onClick={() => setSelectedLanguage(language.name)}
         >
-          <Image 
-            width={53}
-            height={53}
-            src={`/img/${language.name}.svg`} 
-            alt="Code" 
+            <Image
+              src={`/img/${language.name}.svg`} 
+              width={53}
+              height={53}
+              alt="Array Visualization"
+              style={{ width: "53px", height: "53px" }}
             />
+            
         </button>
       ))}
     </div>
