@@ -21,9 +21,9 @@ export default function Sidebar() {
   return (
     <>
       <nav className="lg:hidden fixed top-0 left-0 w-full bg-blue-custom text-white p-2 px-4 flex justify-between items-center z-50">
-        <div className={righteous.className}>
+        <Link href="/" className={righteous.className}>
           <span className="text-lg uppercase">Algorithm Guru</span>
-        </div>
+        </Link>
         <button onClick={toggleSidebar} className="p-2 cursor-pointer">
           <i className={`fas text-[1.5rem] fa-${isOpen ? "times" : "bars"}`}></i>
         </button>
