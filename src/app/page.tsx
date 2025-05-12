@@ -47,39 +47,6 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-3">
         <div className="col-span-12 md:col-span-3">
           <Image
-            src="/img/algorithms.webp"
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="Algorithms"
-            style={{ width: '100%', height: 'auto' }}
-          />
-        </div>
-
-        <div className="col-span-12 md:col-span-9 flex flex-col justify-between">
-          <div>
-            <h2 className="font-bold text-2xl light:text-gray-700 mt-4 md:mt-0">
-              Algorithms
-            </h2>
-            <p>
-              Algorithms are the heart of programming. <br />They’re the step-by-step
-              instructions that tell your computer how to solve a problem or
-              perform a task.
-            </p>
-          </div>
-
-          <Link href="/algorithms" className="btn-info w-fit">
-            More about Algorithms
-            <i className="ml-2 fa fa-arrow-right" aria-hidden="true"></i>
-          </Link>
-        </div>
-      </div>
-
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-
-      <div className="grid grid-cols-12 gap-3">
-        <div className="col-span-12 md:col-span-3">
-          <Image
             src="/img/data-structures.webp"
             width={0}
             height={0}
@@ -105,6 +72,37 @@ export default function Home() {
             More about Data Structures
             <i className="ml-2 fa fa-arrow-right" aria-hidden="true"></i>
           </Link>
+        </div>
+      </div>
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <div className="grid grid-cols-12 gap-3">
+        <div className="col-span-12 md:col-span-3">
+          <Image
+            src="/img/algorithms.webp"
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="Algorithms"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
+
+        <div className="col-span-12 md:col-span-9 flex flex-col justify-between">
+          <div>
+            <h2 className="font-bold text-2xl light:text-gray-700 mt-4 md:mt-0">
+              Algorithms
+            </h2>
+            <p>
+              Algorithms are the heart of programming. <br />They’re the step-by-step
+              instructions that tell your computer how to solve a problem or
+              perform a task.
+            </p>
+          </div>
+
+          <button className="btn-disabled w-fit cursor-not-allowed">
+            More about Algorithms
+            <i className="ml-2 fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </>
