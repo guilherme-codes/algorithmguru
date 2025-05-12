@@ -2,7 +2,7 @@
 
 **The Algorithm Guru** is your friendly guide to understanding algorithms and data structures in a clear, engaging, and friendly way.
 <br />
-Access the live version here: [algorithmsguru.com](https://algorithmsguru.com/)
+Access the live version here: <a href="https://algorithmsguru.com/" target="_blank">algorithmsguru.com</a>
 
 
 <p align="center">
