@@ -5,7 +5,7 @@ export default function NavButtons() {
     <div className="flex gap-4 mt-10">
       <div className="w-1/2 flex flex-col">
         <p className="uppercase font-bold text-gray-500">return</p>
-        <Link href="/pages/data-structure/linked-list" className="btn-disabled">
+        <Link href="/" className="btn-disabled">
           <i className="mr-2 fa fa-arrow-left" aria-hidden="true"></i>
           Home
         </Link>
