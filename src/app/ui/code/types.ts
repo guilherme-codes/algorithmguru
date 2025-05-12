@@ -11,7 +11,7 @@ export type CodeButtonsProps = {
 
 export type Samples = {
   category: string,
-  type: string,
+  topic: string,
   languages: Languages
 }
 

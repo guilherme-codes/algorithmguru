@@ -1,4 +1,4 @@
-import getCodeSamples from "@/app/service/get-languages";
+import getCodeSamples from "@/app/utils/get-languages";
 import Code from "@/app/ui/code/code";
 import Head from "next/head";
 import Image from "next/image";

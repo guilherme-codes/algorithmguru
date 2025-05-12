@@ -1,8 +1,8 @@
-import { Samples } from "../ui/code/types";
+import { Samples } from '../ui/code/types';
+import { SampleMap } from './code-map';
 
 export const getCodeSample = async (language: string, codeSamples: Samples) => {
-  const path = `@/app/${codeSamples.category}/${codeSamples.type}/code/${language}`;
-  const code = await import(path);
+  const sample = SampleMap[codeSamples.category][codeSamples.topic][language];
 
-  return code.default;
+  return sample;
 };

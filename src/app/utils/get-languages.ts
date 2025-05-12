@@ -1,10 +1,10 @@
 import path from "path";
 import fs from "fs/promises";
 
-export default async function getCodeSamples(category: string, type: string) {
+export default async function getCodeSamples(category: string, topic: string) {
   try {
     const basePath = path.join(process.cwd(), "src", "app");
-    const samplesPath = path.resolve(basePath, category, type, "code");
+    const samplesPath = path.resolve(basePath, category, topic, "code");
 
     if (!samplesPath.startsWith(basePath)) {
       throw new Error("Invalid path");
@@ -16,7 +16,7 @@ export default async function getCodeSamples(category: string, type: string) {
       return { name, ext: ext.slice(1) }; 
     });
 
-    return { category, type, languages };
+    return { category, topic, languages };
   } catch (err) {
     throw new Error(`Error reading code samples: ${err}`);
   }
