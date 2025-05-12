@@ -9,8 +9,6 @@ Access the live version here: <a href="https://algorithmsguru.com/" target="_bla
 <img src="https://github.com/user-attachments/assets/0dc2278d-e732-4132-8601-5ca6183ce0ff"  />
 </p>
 
-<br/>
-
 ### This project aims to explain complex topics through:
 - ✨ Simple, no-jargon language  
 - 🧠 Relatable analogies  
