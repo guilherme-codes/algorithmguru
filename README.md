@@ -6,7 +6,7 @@ Access the live version here: <a href="https://algorithmsguru.com/" target="_bla
 
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/0dc2278d-e732-4132-8601-5ca6183ce0ff" width="400" />
+<img src="https://github.com/user-attachments/assets/0dc2278d-e732-4132-8601-5ca6183ce0ff"  />
 </p>
 
 <br/>
