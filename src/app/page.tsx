@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <h1 className="font-bold text-4xl light:text-gray-700 mb-6">
-        Welcome to The Algorithm Guru!
+        Welcome to The Algorithm Guru !
       </h1>
 
       <p>
