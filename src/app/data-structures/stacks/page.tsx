@@ -1,6 +1,5 @@
 import getCodeSamples from "@/app/utils/get-languages";
 import Code from "@/app/ui/code/code";
-import Image from "next/image";
 
 export const metadata = {
   title: "Stacks - The Algorithm Guru",
@@ -21,13 +20,9 @@ export default async function Stacks() {
       </p>
 
       <div className="flex justify-center m-10">
-        <Image
+        <img
           src="/img/stacks.webp"
-          width={0}
-          height={0}
-          sizes="100vw"
           alt="Stack"
-          style={{ width: "100%", height: "auto" }}
         />
       </div>
 
@@ -52,13 +47,9 @@ export default async function Stacks() {
         </ul>
 
       <div className="flex justify-center">
-        <Image
+        <img
           src="/img/stack-diagram.webp"
-          width={0}
-          height={0}
-          sizes="100vw"
           alt="Stack Implementation"
-          style={{ width: "100%", height: "auto" }}
         />
       </div>
 

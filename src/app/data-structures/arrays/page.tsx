@@ -1,7 +1,6 @@
 import getCodeSamples from "@/app/utils/get-languages";
 import Code from "@/app/ui/code/code";
 import Head from "next/head";
-import Image from "next/image";
 
 export const metadata = {
   title: "Arrays - The Algorithm Guru",
@@ -31,13 +30,9 @@ export default async function Arrays() {
       </p>
 
       <div className="flex justify-center m-10">
-        <Image
+        <img
           src="/img/array-visualization.webp"
-          width={0}
-          height={0}
-          sizes="100vw"
           alt="Array Visualization"
-          style={{ width: "100%", height: "auto" }}
         />
       </div>
 
@@ -75,13 +70,9 @@ export default async function Arrays() {
       </ul>
 
       <div className="flex justify-center m-10">
-        <Image
+        <img
           src="/img/array-memory.webp"
-          width={0}
-          height={0}
-          sizes="100vw"
           alt="Array Memory Layout"
-          style={{ width: "100%", height: "auto" }}
         />
       </div>
 

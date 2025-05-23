@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NavButtons from "../ui/navButtons";
 import Head from "next/head";
 
@@ -32,13 +31,9 @@ export default function DataStructures() {
       </p>
       <p>You can think of data structures in a similar way.</p>
 
-      <Image
+      <img
         src="/img/supermarket.webp"
-        width={0}
-        height={0}
-        sizes="100vw"
         alt="Supermarket"
-        style={{ width: "100%", height: "auto" }}
       />
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">
