@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <>
       <h1 className="font-bold text-4xl light:text-gray-700 mb-6">
-        Welcome to The Algorithm Guru !
+        Welcome to The Algorithm Guru!
       </h1>
 
       <p>
@@ -46,13 +45,9 @@ export default function Home() {
 
       <div className="grid grid-cols-12 gap-3">
         <div className="col-span-12 md:col-span-3">
-          <Image
+          <img
             src="/img/data-structures.webp"
-            width={0}
-            height={0}
-            sizes="100vw"
             alt="Data Structures"
-            style={{ width: '100%', height: 'auto' }}
           />
         </div>
 
@@ -77,13 +72,9 @@ export default function Home() {
       <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <div className="grid grid-cols-12 gap-3">
         <div className="col-span-12 md:col-span-3">
-          <Image
+          <img
             src="/img/algorithms.webp"
-            width={0}
-            height={0}
-            sizes="100vw"
             alt="Algorithms"
-            style={{ width: '100%', height: 'auto' }}
           />
         </div>
 
