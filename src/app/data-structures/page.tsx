@@ -1,4 +1,5 @@
 import NavButtons from "../ui/navButtons";
+import Image from "next/image";
 import Head from "next/head";
 
 export const metadata = {
@@ -31,9 +32,12 @@ export default function DataStructures() {
       </p>
       <p>You can think of data structures in a similar way.</p>
 
-      <img
+      <Image
         src="/img/supermarket.webp"
         alt="Supermarket"
+        width={800}
+        height={500}
+        className="w-full h-auto"
       />
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">

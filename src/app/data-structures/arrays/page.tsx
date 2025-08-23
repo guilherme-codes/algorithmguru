@@ -1,4 +1,5 @@
 import getCodeSamples from "@/app/utils/get-languages";
+import Image from "next/image";
 import Code from "@/app/ui/code/code";
 import Head from "next/head";
 
@@ -30,9 +31,12 @@ export default async function Arrays() {
       </p>
 
       <div className="flex justify-center m-10">
-        <img
+        <Image
           src="/img/array-visualization.webp"
           alt="Array Visualization"
+          width={800}
+          height={300}
+          className="w-full h-auto"
         />
       </div>
 
@@ -70,9 +74,12 @@ export default async function Arrays() {
       </ul>
 
       <div className="flex justify-center m-10">
-        <img
+        <Image
           src="/img/array-memory.webp"
           alt="Array Memory Layout"
+          width={800}
+          height={300}
+          className="w-full h-auto"
         />
       </div>
 

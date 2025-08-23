@@ -1,4 +1,5 @@
 import getCodeSamples from "@/app/utils/get-languages";
+import Image from "next/image";
 import Code from "@/app/ui/code/code";
 
 export const metadata = {
@@ -19,9 +20,12 @@ export default async function Stacks() {
         Imagine you are at home, and every plate you use for eating is placed on a stack in your sink, with each plate being placed on top of the previous one. Eventually, you decide to load them all into the dishwasher, removing them one by one, with the last plate used always being the first one to go into the dishwasher. As you remove each plate, you can check whether the stack is empty or see the total number of plates still left.
       </p>
 
-        <img
+        <Image
           src="/img/stacks.webp"
           alt="Stack"
+          width={800}
+          height={600}
+          className="w-full h-auto"
         />
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">
@@ -45,9 +49,12 @@ export default async function Stacks() {
         </ul>
 
       <div className="flex justify-center">
-        <img
+        <Image
           src="/img/stack-diagram.webp"
           alt="Stack Implementation"
+          width={800}
+          height={400}
+          className="w-full h-auto"
         />
       </div>
 
