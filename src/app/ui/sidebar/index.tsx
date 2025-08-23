@@ -45,7 +45,6 @@ export default function Sidebar() {
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
           lg:translate-x-0 lg:w-64
           shadow-lg
-          opacity-95
         `
         }
       >
