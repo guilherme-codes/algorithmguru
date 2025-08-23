@@ -20,7 +20,7 @@ export default function RootLayout({
         className={`${openSans.className} antialiased flex`}
       >
         <Sidebar />
-        <main className="px-6 pb-10 pt-20 lg:py-10 lg:ml-64 transition-all xl:max-w-[60%]">
+        <main className="px-6 pb-10 pt-20 lg:py-10 lg:ml-64 transition-all max-w-full xl:max-w-[60%]">
         {children}
         </main>
       </body>

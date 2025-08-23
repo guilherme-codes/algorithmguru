@@ -19,12 +19,10 @@ export default async function Stacks() {
         Imagine you are at home, and every plate you use for eating is placed on a stack in your sink, with each plate being placed on top of the previous one. Eventually, you decide to load them all into the dishwasher, removing them one by one, with the last plate used always being the first one to go into the dishwasher. As you remove each plate, you can check whether the stack is empty or see the total number of plates still left.
       </p>
 
-      <div className="flex justify-center m-10">
         <img
           src="/img/stacks.webp"
           alt="Stack"
         />
-      </div>
 
       <h2 className="font-bold text-3xl light:text-gray-700 my-6">
         <i className="mr-2 fa fa-hashtag" aria-hidden="true"></i>
